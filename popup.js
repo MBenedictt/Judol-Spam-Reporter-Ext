@@ -144,7 +144,7 @@ function reportCommentsById(commentIds) {
         if (spamOption) {
             spamOption.click();
         } else {
-            console.warn("⚠️ Spam reason not found");
+            console.warn("Spam reason not found");
             return;
         }
 
@@ -156,9 +156,9 @@ function reportCommentsById(commentIds) {
 
         if (confirmBtn) {
             confirmBtn.click();
-            console.log("✅ Comment reported");
+            console.log("Comment reported");
         } else {
-            console.warn("⚠️ Report confirm button not found");
+            console.warn("Report confirm button not found");
         }
     }
 
