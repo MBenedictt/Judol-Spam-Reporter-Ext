@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
     <div class="header">
-        <img src="icon.png" alt="icon">
+        <img src="icon.png" alt="Judol Icon">
         <h2>JUDOL SPAM REPORTER</h2>
     </div>
-    <textarea id="blockedWords" placeholder="Input spam words manually separated by commas..."></textarea>
-    <button id="scan">Scan Comments</button>
-    <p id="scanStatus">Spam comments scanned: 0</p>
-    <div id="spamList"></div>
-    <button id="confirmReport">Confirm Report</button>
+
+    <div class="section">
+        <textarea id="blockedWords" placeholder="Kata spam (pisahkan dengan koma)"></textarea>
+        <button id="scan">Scan Komentar</button>
+        <p class="scan-status" id="scanStatus">Spam comments scanned: 0</p>
+    </div>
+
+    <div class="section" style="padding: 0;">
+        <div id="spamList"></div>
+        <button id="confirmReport" style="display: none; margin: 0.5em; border-radius: 10px;">Laporkan
+            Terpilih</button>
+    </div>
+
     <script src="popup.js"></script>
 </body>
+
 </html>
